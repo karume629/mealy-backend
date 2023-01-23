@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     end
 
     def show
-       user = User.find(session[:id]) 
+       user = User.find(params[:id]) 
        if user 
            render json: user, status: :ok
         else
@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     end
 
     def update
-        user = User.find(session[:id])
+        user = User.find(params[:id])
         if user
             user.update!(user_params)
             render json: user, status: :accepted
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
     end
 
     def destroy
-        user = User.find(session[:id])
+        user = User.find(params[:id])
         if user
             user.destroy
             render json: {success: "Deleted"}, status: :no_content
