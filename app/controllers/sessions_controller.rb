@@ -9,6 +9,16 @@ class SessionsController < ApplicationController
         end
     end
 
+    def create_admin
+        admin = Admin.find_by(username: params[:username])
+        if admin&.authenticate(params[:password])
+            session[:admin_id] = admin.id
+            render json: admin, status: :created
+        else
+            render json: {error: "Invalid username or password"}, status: :unauthorized
+        end
+    end
+
     def destroy
         session.delete :user_id
         head :no_content
