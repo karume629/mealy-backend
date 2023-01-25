@@ -45,7 +45,7 @@ class MealsController < ApplicationController
     private
 
     def meal_params
-        params.permit(:title, :price, :image, :description, :admin_id)
+        params.permit(:title, :price, :image, :description, :subtotal, :quantity, :admin_id)
     end
 
     def per_page
