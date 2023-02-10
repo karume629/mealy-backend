@@ -4,8 +4,11 @@ class CreateMeals < ActiveRecord::Migration[7.0]
       t.string :title
       t.string :image
       t.integer :price
-      t.string :description
-      t.belongs_to :admin, null: false, foreign_key: true
+      t.integer :subtotal, :default => 0
+      t.integer :quantity, :default => 0
+      t.text :description
+      t.belongs_to :admin, null: false, foreign_key: true, on_delete: :cascade
+      t.belongs_to :calendar, null: false, foreign_key: true, on_delete: :cascade
 
       t.timestamps
     end

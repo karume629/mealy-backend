@@ -45,7 +45,7 @@ class AdminsController < ApplicationController
     private
 
     def admin_params
-        params.permit(:username, :password, :email, :password_confirmation, :avatar, :is_admin)
+        params.permit(:username, :password, :email, :password_confirmation)
     end
 
     def per_page
