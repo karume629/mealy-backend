@@ -8,8 +8,8 @@ end
     Admin.create(username: "admin_#{i + 1}", email: Faker::Internet.email, password: "Abzedar#{i+1}")    
 end
 
-Calendar.create(day: "2023-02-10")
 Calendar.create(day: "2023-02-11")
+Calendar.create(day: "2023-02-10")
 
 2.times do | i |
     Meal.create(title: Faker::Food.dish, price: 100 * i, description: Faker::Food.description, image: Faker::Avatar.image(), admin_id: 1, calendar_id: 1)    
