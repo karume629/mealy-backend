@@ -1,24 +1,51 @@
-# README
+# MEALLY
+Mealy is an application that allows customers to make food orders and helps the food vendor know what the customers want to eat. 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
+ A platform where users can set up an account, manage meal options,set up a menu fo a specific day, view the orders placed and how much money is made y end of working day.
 
-Things you may want to cover:
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+### Dependencies
 
-* Configuration
+React
+Ruby on rails.
 
-* Database creation
+### Installing
 
-* Database initialization
+* How/where to download your program
+* Any modifications needed to be made to files/folders
 
-* How to run the test suite
+### Executing program
 
-* Services (job queues, cache servers, search engines, etc.)
+* How to run the program
+* Step-by-step bullets
+```
+code blocks for commands
+```
 
-* Deployment instructions
+## Help
 
-* ...
+Any advise for common problems or issues.
+```
+command to run if program contains helper info
+```
+
+## Authors
+
+ADERA KARUME
+
+
+
+## Version History
+
+* 0.1
+    * Initial Release
+
+## License
+
+This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+
+## Acknowledgments
+IAN OKUMU.
